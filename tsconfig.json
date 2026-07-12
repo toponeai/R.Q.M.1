@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@rqm1/auth-engine": ["packages/auth-engine/src"],
+      "@rqm1/entity-engine": ["packages/entity-engine/src"],
+      "@rqm1/maps-engine": ["packages/maps-engine/src"],
+      "@rqm1/ai-engine": ["packages/ai-engine/src"],
+      "@rqm1/search-engine": ["packages/search-engine/src"],
+      "@rqm1/wallet-engine": ["packages/wallet-engine/src"],
+      "@rqm1/media-engine": ["packages/media-engine/src"],
+      "@rqm1/analytics-engine": ["packages/analytics-engine/src"],
+      "@rqm1/messaging-engine": ["packages/messaging-engine/src"],
+      "@rqm1/notification-engine": ["packages/notification-engine/src"],
+      "@rqm1/advertisement-engine": ["packages/advertisement-engine/src"],
+      "@rqm1/live-engine": ["packages/live-engine/src"],
+      "@rqm1/database": ["packages/database/src"],
+      "@rqm1/types": ["packages/types/src"]
+    }
+  },
+  "include": ["packages/*/src", "apps/*/src"],
+  "exclude": ["node_modules", "dist", "build"]
+}
